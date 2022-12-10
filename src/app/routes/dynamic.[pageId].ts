@@ -15,7 +15,7 @@ export const routeMeta = defineRouteMeta({
   standalone: true,
   imports: [AsyncPipe, NgIf],
   template: `
-    <h1>Dynamic Page PageId: {{ pageId$ | async }}</h1>
+    <h1>Dynamic Route Page PageId: {{ pageId$ | async }}</h1>
 
     <button type="button" (click)="getHello()">getHello!</button>
     <p *ngIf="resultGetHello$ | async as resultGetHello"> {{ resultGetHello.message }}</p>
