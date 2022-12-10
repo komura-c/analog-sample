@@ -46,6 +46,11 @@
             "config": "vite.config.ts"
           }
         }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true
+        }
       }
     }
   }

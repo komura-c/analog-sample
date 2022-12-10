@@ -1,0 +1,13 @@
+<div class="navigation-bar">
+  <p>navigation-bar works!</p>
+
+  <a routerLink="/">Go To Home Page</a>
+
+  <div class="navigation-bar__content">
+    <button type="button" (click)="increment()">PathCount {{ count }}</button>
+    <a class="link" [routerLink]="['/dynamic', count]" routerLinkActive="router-link-active" >Go To Dynamic Page ("/dynamic/{{ count }}")</a>
+    <a class="link" routerLink="/static" routerLinkActive="router-link-active" >Go To Static Page</a>
+    <a class="link" routerLink="/404" routerLinkActive="router-link-active" >Go To Not Found Page</a>
+  </div>
+</div>
+

@@ -4,7 +4,7 @@
   "compilerOptions": {
     "composite": false,
     "outDir": "./out-tsc/spec",
-    "types": ["node", "vitest/globals"]
+    "types": ["node", "vitest/globals", "vitest",]
   },
   "files": ["src/test.ts"],
   "include": ["src/**/*.spec.ts", "src/**/*.ts"]
