@@ -3,8 +3,5 @@
     "src/server/routes/v1/*.ts": {
       "memory": 1024
     }
-  },
-  "rewrites": [
-    { "source": "/api/v1/:id", "destination": "src/server/routes/v1/:id" }
-  ]
+  }
 }
