@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "src/server/routes/v1/**": {
+      "memory": 1024
+    }
+  },
+  "rewrites": [
+    { "source": "/api/v1/**", "destination": "src/server/routes/v1/**" }
+  ]
+}
