@@ -5,6 +5,6 @@
     }
   },
   "rewrites": [
-    { "source": "/api/v1/**", "destination": "src/server/routes/v1/**" }
+    { "source": "/api/v1/:id", "destination": "src/server/routes/v1/:id" }
   ]
 }
