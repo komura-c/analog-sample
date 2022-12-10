@@ -1,5 +1,8 @@
 import { defineRouteMeta } from '@analogjs/router';
-import { Component } from '@angular/core';
+import { AsyncPipe, NgIf } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ApiService } from '../services/api.service';
 
 export const routeMeta = defineRouteMeta({
   title: 'Static',
@@ -11,19 +14,20 @@ export const routeMeta = defineRouteMeta({
 @Component({
   selector: 'app-static',
   standalone: true,
+  imports: [NgIf, AsyncPipe],
   template: `
     <h1>Static Route Page</h1>
 
-    <div class="card">
-      <button type="button" (click)="increment()">Count {{ count }}</button>
-    </div>
+    <button type="button" (click)="getHello()">getHello!</button>
+    <p *ngIf="resultGetHello$ | async as resultGetHello"> {{ resultGetHello.message }}</p>
   `,
   styles: [],
 })
 export default class StaticComponent {
-  count = 0;
+  private readonly apiService = inject(ApiService);
+  resultGetHello$!: Observable<{ message: string }>;
 
-  increment() {
-    this.count++;
+  getHello() {
+    this.resultGetHello$ = this.apiService.getHello();
   }
 }
