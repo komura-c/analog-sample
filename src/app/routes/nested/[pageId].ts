@@ -14,7 +14,7 @@ export const routeMeta = defineRouteMeta({
   standalone: true,
   imports: [AsyncPipe, NgIf],
   template: `
-    <h2>Nested Dynamic Page PageId: {{ pageId$ | async }}</h2>
+    <h2>Nested Dynamic Route Page PageId: {{ pageId$ | async }}</h2>
   `,
   styles: [],
 })

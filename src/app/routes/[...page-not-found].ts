@@ -13,7 +13,7 @@ export const routeMeta = defineRouteMeta({
   standalone: true,
   imports: [RouterLinkWithHref],
   template: `
-    <h2>Page Not Found</h2>
+    <h1>Page Not Found</h1>
 
     <a routerLink="/">Go Back Home</a>
   `,
