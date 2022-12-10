@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "src/server/routes/v1/*.ts": {
-      "memory": 1024
-    }
-  }
-}
