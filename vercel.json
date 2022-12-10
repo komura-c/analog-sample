@@ -1,8 +1,3 @@
 {
-  "buildCommand": "NITRO_PRESET=vercel npm run build",
-  "functions": {
-    "dist/server/functions/__nitro.func/index.mjs": {
-      "memory": 1024
-    }
-  }
+  "buildCommand": "NITRO_PRESET=vercel npm run build"
 }
