@@ -1,0 +1,16 @@
+.navigation-bar {
+  border: 1px solid #fff;
+  padding: 16px;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    display: block;
+    padding: 16px;
+  }
+}

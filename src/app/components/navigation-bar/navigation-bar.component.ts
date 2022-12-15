@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.css']
+  styleUrls: ['./navigation-bar.component.scss']
 })
 export class NavigationBarComponent {
   count = 0;
